@@ -13,6 +13,6 @@ The YouTube subtitle files has the following format:
 Hello World!
 ````
 
-1. The first line is a integer number
+1. The first line is an integer number
 2. Timestamp range
 3. Subtitle line (text)
