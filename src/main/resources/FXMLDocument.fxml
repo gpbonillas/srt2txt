@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="789.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.str2txt.FXMLDocumentController">
+    <children>
+        <Button id="btnLoadFile" fx:id="btnLoadFile" layoutX="22.0" layoutY="28.0" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="138.0" text="Cargar archivo">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label fx:id="label" layoutX="187.0" layoutY="41.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="888.0" />
+        <Button id="btnProcessTextAreaContent" fx:id="btnProcessTextAreaContent" alignment="CENTER" layoutX="523.0" layoutY="406.0" onAction="#convertSTR2Text" prefHeight="54.0" prefWidth="61.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <graphic>                
+                <ImageView fitHeight="40.0" fitWidth="40.0" image="$btnImage">
+                    <image>
+                        <Image fx:id="btnImage" url="@img/gears-process-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextArea id="txtSRTContent" fx:id="txtSRTContent" layoutX="20.0" layoutY="115.0" prefHeight="628.0" prefWidth="470.0" />
+        <TextArea id="txtOnlyText" fx:id="txtOnlyText" layoutX="611.0" layoutY="115.0" prefHeight="628.0" prefWidth="470.0" />
+    </children>
+</AnchorPane>
